@@ -1,11 +1,14 @@
 <template>
-  <h1>Lista de tarefas</h1>
+  <h1>
+    Lista de tarefas
+    <router-link :to ="{name: 'todos.create'}">+</router-link>
+  </h1>
 
   <div v-show="loading">Carregando as tarefas</div>
 
   <ul>
     <li v-for="todo in todos" :key="todo.id">
-      {{ todo.name }}
+      {{ todo.title }}
     </li>
   </ul>
 </template>
