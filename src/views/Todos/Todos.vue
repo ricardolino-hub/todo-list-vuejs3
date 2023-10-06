@@ -8,7 +8,7 @@
 
   <ul>
     <li v-for="todo in todos" :key="todo.id">
-      {{ todo.title }}
+      <todo :todo="todo"/>
     </li>
   </ul>
 </template>
@@ -16,6 +16,7 @@
 <script>
 import { onMounted, ref } from 'vue'
 import TodoService from '@/services/todos.service'
+import Todo from './components/Todo.vue'
 
 export default {
   setup() {
@@ -35,6 +36,9 @@ export default {
       loading,
       todos
     }
+  },
+  components: {
+    Todo
   }
 }
 </script>
