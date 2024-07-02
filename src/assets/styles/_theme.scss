@@ -1,0 +1,33 @@
+$defaultfont: 'Open Sans', sans-serif;
+$background: #aaa2a2;
+
+body {
+    font: $defaultfont;
+    text-align: center;
+    background: $background;
+}
+
+ul {
+    padding: 0;
+}
+
+ul li {
+    list-style: none;
+    background: #CCC;
+    margin: 8px;
+    border-radius: 10px;
+}
+
+ul li :hover {
+    background: #868484;
+}
+
+a {
+    margin: 0 4px;
+}
+
+input[type=text] {
+    width: 100%;
+    margin: 10px;
+    padding: 6px;
+}

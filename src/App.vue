@@ -28,3 +28,12 @@ nav a.router-link-exact-active {
   color: #42b983;
 } */
 </style>
+
+<style>
+@import url('https://pro.fontawesome.com/releases/v5.10.0/css/all.css');
+</style>
+
+
+<style lang="sass">
+@import "./assets/styles/eti.scss"
+</style>
